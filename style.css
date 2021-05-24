@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+
+/* --------------NOTIFICATION-------------- */
+#notification {
+	width: 100%;
+	height: auto;
+	padding: 12px 24px;
+	background-color: #efbb21;
+	line-height: 1.5rem;
+  }
+  
+  .notification_icon img {
+	width: 25px;
+	height: 25px;
+  }
+  
+  .notification_message strong {
+	font-weight: 700;
+  }
+  
+  .notification_message a,
+  .content_body a {
+	color: black;
+	text-decoration: underline;
+  }
+  
+  /* --------------SITE-------------- */
+
+.box{
+    flex: 1;
+    text-align: right;
+    margin-top: -45px;
+	
+    
+    padding-right: 20rem;
+	
+    
+}
+
+.box ul li{
+    display: inline-block;
+    margin-right: 30px;
+
+	
+    
+    
+    
+}
+.logobild{
+    margin-top: 10px;
+    height: inherit;
+    border-style: none;
+    
+}
+
+.logopng{
+    padding-top: 10px;
+    padding-left: 35px;
+    width: 300px;
+}
+
+.se{
+    padding-left:63rem;
+    position: absolute;
+    top: 3.5rem;
+   
+}
+/*-----------------------------------menu-----------------------------------*/
+
+.navbarr{
+	width: 100%;
+	background-color: rgb(179, 45, 45);
+	overflow: auto;
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+}
+.navbarr a{
+	float: left;
+	padding: 20px;
+	color:#fff;
+	text-decoration: none;
+	font-size: 17px;
+	transition: 0.4s all;
+}
+
+.navbarr a:hover{
+	color: #ffffff;
+    text-decoration-line: underline;
+    
+}
+
+
+
+
+@media screen and (max-width: 500px){
+	.navbar a{
+		float:none;
+		display: block;
+		text-align: center;
+	}
+}
+
+.title{
+	position: absolute;
+	
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	/*fråga lärare om transition: 0.4s all;*/
+}
+.title h1{
+	font-size: 70px;
+	color: white
+}
+/* --------------MAIN CONTAINER-------------- */
+#main_container,
+.container-kontakt--,
+footer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  list-style: none;
+}
+
+#footer {
+  padding: 1rem;
+}
+
+.breadcrumb {
+  max-width: 1200px;
+  max-height: 75px;
+}
+
+.breadcrumb ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  list-style: none;
+  gap: 15px;
+  padding: 20px 8px;
+  margin-bottom: 10px;
+}
+
+.breadcrumb .currentPage {
+  color: grey;
+}
+
+#content {
+  max-width: 1200px;
+  display: flex;
+  margin: 20px;
+  padding-top: 40px;
+}
+
+.content_sidemenu {
+  width: 20%;
+}
+
+.content_body {
+  width: 80%;
+}
+
+.content_head {
+  width: 70%;
+  line-height: 1.5rem;
+  padding: 0 15px;
+}
+
+.content_head .head {
+  padding-bottom: 20px;
+}
+
+.content_head .head-top {
+  font-size: 1.2rem;
+  padding: 20px 0;
+}
+
+.content_head a {
+  color: #ae0b05;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #ae0b05;
+}
+
+/* --------GALLERY GRID--------- */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-item {
+  max-width: 500px;
+  min-height: 500px;
+  height: fit-content;
+  border-radius: 20px;
+  box-shadow: 1px 7px 6px 1px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.grid-item-text {
+  height: 50%;
+  margin: 20px;
+  line-height: 1.5rem;
+}
+
+.grid-item > a {
+  text-decoration: none;
+}
+
+.grid-item-text h3 {
+  padding-bottom: 20px;
+}
+
+.grid-item-pic {
+  height: 50%;
+}
+
+.grid-item-pic img {
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-item:hover,
+.h-1:hover {
+  transition: all 400ms;
+  transform: scale(1.01);
+}
+/* -------------INFORMATION GRID---------------- */
+.grid_h {
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.1);
+  line-height: 2rem;
+  border-radius: 15px;
+  margin: 30px 15px;
+  padding: 20px;
+}
+
+.grid_h h3 a,
+.o-red-i a {
+  text-decoration: none;
+}
+
+.grid_h h3 a:hover {
+  text-decoration: underline;
+}
+
+.red {
+  margin: 15px;
+  padding: 0;
+  border-radius: 15px;
+}
+
+.o-red {
+  background-color: #ae0b05;
+  padding: 10px 20px;
+  border-radius: 15px 15px 0 0;
+  color: white;
+}
+
+.o-red-i {
+  padding: 20px;
+}
+
+.o-red-i a:hover {
+  text-decoration: underline;
+}
+
+.o-red-i .synpunkter,
+.grid_h .kontaktcenter {
+  text-decoration: underline;
+  color: #ae0b05;
+}
+
+.help p {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+.grid-button button {
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #dee2e6;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.publish {
+  line-height: 1.5rem;
+  border-radius: 15px;
+  margin: 30px 15px;
+  color: grey;
+}
+/* ------------------KONTAKT-------------------- */
+.container-kontakt {
+  background-color: #bc004a;
+}
+.container-kontakt-wrapper {
+  background-color: #bc004a;
+  color: white;
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 30px;
+  height: fit-content;
+}
+
+.container-kontakt-col1 {
+  line-height: 2rem;
+}
+
+.container-kontakt-col2 {
+  border-left: solid white 4px;
+  padding-left: 2rem;
+  line-height: 1.5rem;
+}
+
+.col1-head {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.col1-text,
+.col2-head {
+  font-size: 1.2rem;
+}
+
+.container-box {
+  display: grid;
+  position: relative;
+  top: -30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 3rem;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.container-box-item {
+  line-height: 2rem;
+}
+
+.box-col-head {
+  font-size: 2rem;
+}
+
+.box-col-text {
+  padding: 10px 0;
+}
+
+.box-col-click a {
+  color: #ae0b05;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.link-opentime {
+  padding: 10px 0 50px 0;
+}
+
+.link-opentime a {
+  position: relative;
+  text-decoration: none;
+  float: right;
+  top: -20px;
+  font-weight: 500;
+  color: white;
+}
+/* ----------------CHAT WINDOW------------------ */
+/* Button used to open the chat form - fixed at the bottom of the page */
+.chatbot {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  margin: auto;
+}
+
+.open-button {
+  background-color: #ae0b05;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  border-radius: 20px;
+  bottom: 23px;
+  right: 28px;
+  width: 100px;
+  outline: none;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background-color: #ddd;
+  resize: none;
+  border-radius: 20px;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #efbb21;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #bc004a;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+/* ----------------FOOTER----------------- */
+footer,
+footer a {
+  padding: 4rem 0;
+  line-height: 1.8rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  margin: 1rem 0;
+}
+
+.footer-col2 a {
+  color: #ae0b05;
+}
+
+.footer-col2,
+.footer-col3 {
+  text-decoration: underline;
+  line-height: 1.3rem;
+  padding: 10px 0;
+}
+
+.footer-col3 .ft {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ------------ACCORDIAN NAVBAR----------- */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  background-color: white;
+}
+
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/* ----------------MEDIA QUERIES-------------- */
+@media only screen and (max-width: 1247px) {
+  .site_nav,
+  .site_menu_ {
+    display: none;
+  }
+  .content_head {
+    width: 90%;
+  }
+  .site_nav_search {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 895px) {
+  .content_body {
+    width: 100%;
+  }
+  .grid-gallery,
+  .container-box,
+  .container-kontakt-wrapper,
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .content_sidemenu {
+    display: none;
+  }
+  .grid-item {
+    max-width: 700px;
+    min-height: 500px;
+  }
+  .content_head {
+    width: 100%;
+  }
+}
